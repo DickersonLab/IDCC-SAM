@@ -1,3 +1,9 @@
+This is the official code repository for IDCC-SAM (Immunocytochemistry Dataset Cell Counting-Segment Anything Model), a pipeline leveraging SAM's zero-shot capability for cell counting in Immunocytochemistry images without a need for manual labels.
+
+IDCC-SAM utilizes the Meta AI's Segment Anything Model (SAM), pretrained on a 11 million images and 1.1billion masks, to segment and count cells in Immunocytochemistry cellular images.
+
+To reproduce our results, you may follow the steps below:
+
 **Step 1: Pre-process Images**
 
 A.	Run the “IDCC-SAM Images Train-Test Split” notebook in the “preprocessing” folder. This code does the following:
