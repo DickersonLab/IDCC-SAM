@@ -19,7 +19,9 @@ B.  Ensure to maintain the same name for the code repository after download.
 
 **Step 2: Pre-process Images**
 
-A.	Run the “IDCC-SAM Images Train-Test Split” notebook in the “preprocessing” folder. This code does the following:
+_Of all the 3 datasets evaluated in this work, IDCIA dataset is the most complex. So, we developed a preprocessing step for this dataset to improve model performance._
+
+A.  Run the “IDCC-SAM Images Train-Test Split” notebook in the “preprocessing” folder. This code does the following:
 
     1.	Split original IDCIA images into Training and Test samples.
             a. There are 262 images across 7 folders (by cell type antibody) in the IDCIA folder.
