@@ -21,8 +21,6 @@ A.	Run the “IDCC-SAM Images Train-Test Split” notebook in the “preprocessi
 
 B.	Run the “Apply CLAHE to Test Images_IDCC-SAM” notebook in the “preprocessing” folder. This code improves the even illumination in the test images prior to feeding it into IDCC-SAM and other comparison models.
 
-C.	Run the “Mask RCNN Training Data Preprocessing” notebook in the “preprocessing” folder. In order to fine-tune a Mask RCNN model (for our baseline comparison), we need to convert the dataset into a coco-format. This code helps us do that. 
-
 
 **Step 2: Run all models for each of the datasets**
 
