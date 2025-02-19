@@ -1,8 +1,9 @@
-This is the official code repository for IDCC-SAM (Immunocytochemistry Dataset Cell Counting-Segment Anything Model), a pipeline leveraging SAM's zero-shot capability for cell counting in Immunocytochemistry images without a need for manual labels.
+This is the official code repository for IDCC-SAM (Immunocytochemistry Dataset Cell Counting using Segment Anything Model), a novel end-to-end pipeline that leverages the Segment Anything Model (SAM) for fully automatic cell counting in immunocytochemistry datasets. By employing a zero-shot approach, IDCC-SAM eliminates the need for labeled training data, offering significant improvements over both supervised and zero-shot benchmark methods. Our results demonstrate the effectiveness and adaptability of IDCC-SAM in three diverse datasets, showcasing its potential to advance the state-of-the-art in automated cell counting tasks.
 
 IDCC-SAM utilizes the Meta AI's Segment Anything Model (SAM), pretrained on a 11 million images and 1.1billion masks, to segment and count cells in Immunocytochemistry cellular images.
 
 ![SAM design](IDCC-SAM_Architecture_Diagram.png?raw=true)
+
 
 To reproduce our results, you may follow the steps below:
 
@@ -41,3 +42,12 @@ C.	Results for each model per dataset can be reproduced by running the '.ipynb' 
 **Step 4: Review Results**
 
 A.	Open the '.xlsx' file in each of the sub-sub-folders in step 3B above to view the results of each model per dataset. files are named as "_Model Name__prediction_summary__Dataset Name_.xlsx".
+
+
+
+Here is the link to the publication for this work: https://www.mdpi.com/2306-5354/12/2/184
+
+If you find our code useful, please consider citing our work as follows:
+
+
+Fanijo, S., Jannesari, A., & Dickerson, J. (2025). IDCC-SAM: A Zero-Shot Approach for Cell Counting in Immunocytochemistry Dataset Using the Segment Anything Model. Bioengineering, 12(2), 184. https://doi.org/10.3390/bioengineering12020184
