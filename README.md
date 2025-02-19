@@ -2,6 +2,9 @@ This is the official code repository for IDCC-SAM (Immunocytochemistry Dataset C
 
 IDCC-SAM utilizes the Meta AI's Segment Anything Model (SAM), pretrained on a 11 million images and 1.1billion masks, to segment and count cells in Immunocytochemistry cellular images.
 
+Here is the link to the publication for this work: https://www.mdpi.com/2306-5354/12/2/184
+
+
 ![SAM design](IDCC-SAM_Architecture_Diagram.png?raw=true)
 
 
@@ -44,8 +47,7 @@ C.	Results for each model per dataset can be reproduced by running the '.ipynb' 
 A.	Open the '.xlsx' file in each of the sub-sub-folders in step 3B above to view the results of each model per dataset. files are named as "_Model Name__prediction_summary__Dataset Name_.xlsx".
 
 
-
-Here is the link to the publication for this work: https://www.mdpi.com/2306-5354/12/2/184
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 If you find our code useful, please consider citing our work as follows:
 
