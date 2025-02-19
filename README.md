@@ -17,24 +17,22 @@ A.	Run the “IDCC-SAM Images Train-Test Split” notebook in the “preprocessi
             a. 40% (10 each) of all cell types except DAPI are moved into Test folder.
             b. To avoid imbalance, only 15% (40) of the DAPI is moved into the Test folder
     3.	This makes the total Test images 100
-    4.	The rest are used to fine-tune only the baseline comparison model (UNet and Mask RCNN).
+    4.	The rest are used to fine-tune only the baseline comparison models.
 
-B.	Run the “Apply CLAHE to Test Images_IDCC-SAM” notebook in the “preprocessing” folder. This code improves the even illumination in the test images prior to feeding it into IDCC-SAM for zero-shot cell counting
+B.	Run the “Apply CLAHE to Test Images_IDCC-SAM” notebook in the “preprocessing” folder. This code improves the even illumination in the test images prior to feeding it into IDCC-SAM and other comparison models.
 
 C.	Run the “Mask RCNN Training Data Preprocessing” notebook in the “preprocessing” folder. In order to fine-tune a Mask RCNN model (for our baseline comparison), we need to convert the dataset into a coco-format. This code helps us do that. 
 
 
-**Step 2: Run Mask RCNN Model (Baseline comparison model 1)**
+**Step 2: Run all models for each of the datasets**
 
-A.	Run the “Mask RCNN Model_Baseline Comparison 1” notebook in the root folder.
+A.	In the "Main Code" folder, we have three sub-folders representing each of the 3 datasets [ADC, VGG, and IDCIA] on which we run IDCC-SAM and the other 4 comparison models [Mask RCNN, NP-SAM, UNET, and SAM4Organoid]. 
 
-    i.	This code finetunes the Mask RCNN model for comparison purposes. We use the images that we preprocess in step C in the “preprocess images” section.
-    ii.	Results are saved in the “Mask RCNN/Test Results” sub-folder.
+B.  Next, in each of these 3 sub-folders, there are 5 further sub-sub-folders, each representing the implementation of IDCC-SAM and our other 4 comparison models using the corresponding dataset.
+
+C.	Results for each model per dataset can be reproduced by running the '.ipynb' file in each of the sub-sub-folders.
 
 
-**Step 3: Run UNet Model (Baseline comparison model 2)**
+**Step 3: Review Results**
 
-A.	Run the “UNet Model_Baseline Comparison 2” notebook in the root folder.
-
-    i.	This code finetunes the UNet model for comparison purposes. We use the images that we preprocess in step C in the “preprocess images” section.
-    ii.	Results are saved in the “UNet/Test Results” sub-folder.
+A.	Open the '.xlsx' file in each of the sub-sub-folders in step 2B above to view the results of each model per dataset. files are named as "_Model Name__prediction_summary__Dataset Name_.xlsx".
