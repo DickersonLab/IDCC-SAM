@@ -6,7 +6,14 @@ IDCC-SAM utilizes the Meta AI's Segment Anything Model (SAM), pretrained on a 11
 
 To reproduce our results, you may follow the steps below:
 
-**Step 1: Pre-process Images**
+
+**Step 1: Download the code repository and Mount it on Google Drive**
+
+A.	Download the entire code repository and mount it on your Google Drive account (Home) on its own, not into a sub-folder.
+B.  Ensure to maintain the same name for the code repository after download.
+
+
+**Step 2: Pre-process Images**
 
 A.	Run the “IDCC-SAM Images Train-Test Split” notebook in the “preprocessing” folder. This code does the following:
 
@@ -22,7 +29,7 @@ A.	Run the “IDCC-SAM Images Train-Test Split” notebook in the “preprocessi
 B.	Run the “Apply CLAHE to Test Images_IDCC-SAM” notebook in the “preprocessing” folder. This code improves the even illumination in the test images prior to feeding it into IDCC-SAM and other comparison models.
 
 
-**Step 2: Run all models for each of the datasets**
+**Step 3: Run all models for each of the datasets**
 
 A.	In the "Main Code" folder, we have three sub-folders representing each of the 3 datasets [ADC, VGG, and IDCIA] on which we run IDCC-SAM and the other 4 comparison models [Mask RCNN, NP-SAM, UNET, and SAM4Organoid]. 
 
@@ -31,6 +38,6 @@ B.  Next, in each of these 3 sub-folders, there are 5 further sub-sub-folders, e
 C.	Results for each model per dataset can be reproduced by running the '.ipynb' file in each of the sub-sub-folders.
 
 
-**Step 3: Review Results**
+**Step 4: Review Results**
 
-A.	Open the '.xlsx' file in each of the sub-sub-folders in step 2B above to view the results of each model per dataset. files are named as "_Model Name__prediction_summary__Dataset Name_.xlsx".
+A.	Open the '.xlsx' file in each of the sub-sub-folders in step 3B above to view the results of each model per dataset. files are named as "_Model Name__prediction_summary__Dataset Name_.xlsx".
