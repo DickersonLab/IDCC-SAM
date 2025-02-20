@@ -14,6 +14,7 @@ To reproduce our results, you may follow the steps below:
 **Step 1: Download the code repository and Mount it on Google Drive**
 
 A.	Download the entire code repository and mount it on your Google Drive account (Home) on its own, not into a sub-folder.
+
 B.  Ensure to maintain the same name for the code repository after download.
 
 
@@ -21,7 +22,7 @@ B.  Ensure to maintain the same name for the code repository after download.
 
 _Of all the 3 datasets evaluated in this work, IDCIA dataset is the most complex. So, we developed a preprocessing step for this dataset to improve model performance._
 
-A.  Run the “IDCC-SAM Images Train-Test Split” notebook in the “preprocessing” folder. This code does the following:
+A.  Run the “IDCC-SAM Images Train-Test Split” notebook in the “Preprocessing” folder. This code does the following:
 
     1.	Split original IDCIA images into Training and Test samples.
             a. There are 262 images across 7 folders (by cell type antibody) in the IDCIA folder.
@@ -32,12 +33,12 @@ A.  Run the “IDCC-SAM Images Train-Test Split” notebook in the “preprocess
     3.	This makes the total Test images 100
     4.	The rest are used to fine-tune only the baseline comparison models.
 
-B.	Run the “Apply CLAHE to Test Images_IDCC-SAM” notebook in the “preprocessing” folder. This code improves the even illumination in the test images prior to feeding it into IDCC-SAM and other comparison models.
+B.	Run the “Apply CLAHE to Test Images_IDCC-SAM” notebook in the “Preprocessing” folder. This code improves the even illumination in the test images prior to feeding it into IDCC-SAM and other comparison models.
 
 
 **Step 3: Run all models for each of the datasets**
 
-A.	In the "Main Code" folder, we have three sub-folders representing each of the 3 datasets [ADC, VGG, and IDCIA] on which we run IDCC-SAM and the other 4 comparison models [Mask RCNN, NP-SAM, UNET, and SAM4Organoid]. 
+A.	In the "Rebuttal" folder, we have three sub-folders representing each of the 3 datasets [ADC, VGG, and IDCIA] on which we run IDCC-SAM and the other 4 comparison models [Mask RCNN, NP-SAM, UNET, and SAM4Organoid]. 
 
 B.  Next, in each of these 3 sub-folders, there are 5 further sub-sub-folders, each representing the implementation of IDCC-SAM and our other 4 comparison models using the corresponding dataset.
 
